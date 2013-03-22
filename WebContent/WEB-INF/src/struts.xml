@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.custom.i18n.resources" value="global" />
+
+	<package name="sample" extends="struts-default">
+	
+		<action name="logout" class="controller.LogoutAction">
+			<result name="success">view/index.jsp</result>
+		</action>
+	
+		<action name="list_users" class="controller.ListUsersAction">
+			<result name="success">view/list_users.jsp</result>
+		</action>
+	
+		<action name="register" class="controller.RegisterAction">
+			<result name="success">view/index.jsp</result>
+			<result name="input">view/register.jsp</result>
+			<result name="upload">view/upload.jsp</result>
+			<result name="edit">view/edit.jsp</result>
+			<result name="viewUser">view/viewUserPrep.jsp</result>
+		</action>
+			
+		<action name="forget" class="controller.ForgetAction">
+			<result name="success">view/index.jsp</result>
+			<result name="input">view/forget.jsp</result>
+		</action>
+		
+		<action name="login" class="controller.LoginAction">
+			<result name="login">view/login.jsp</result>
+			<result name="register">view/register.jsp</result>
+			<result name="input">view/login.jsp</result>
+			<result name="edit">view/edit.jsp</result>		
+			<result name="forget">view/forget.jsp</result>
+			<result name="success">view/index.jsp</result>
+			<result name="upload">view/upload.jsp</result>
+			<result name="viewUser">view/viewUserPrep.jsp</result>
+		</action>
+		
+		<action name="index" class="controller.IndexAction">
+			<result name="success">view/map.jsp</result>
+		</action>
+	
+		<action name="about" class="controller.AboutAction">
+			<result name="success">view/about.jsp</result>
+		</action>
+		
+		<action name="search" class="controller.SearchAction">
+			<result name="success">view/search.jsp</result>
+		</action>
+		
+		<action name="list_potholes" class="controller.ListPotholesAction">
+			<result name="success">view/list_potholes.jsp</result>
+		</action>
+		
+		<action name="upload" class="controller.UploadAction">
+			<result name="input">view/upload.jsp</result>
+			<result name="success">view/upload.jsp</result>
+			<result name="login">view/login.jsp</result>
+		</action>
+		
+		<action name="edit" class="controller.EditAction">
+			<result name="login">view/login.jsp</result>
+			<result name="input">view/edit.jsp</result>
+			<result name="success">view/edit.jsp</result>
+		</action>
+		
+		<action name="viewPothole" class="controller.ViewPotholeAction">
+			<result name="input"> view/viewPothole.jsp</result>
+			<result name="success">view/viewPothole.jsp</result>
+		</action>
+		
+		<action name="viewUser" class="controller.ViewUserAction">
+			<result name="input">view/viewUser.jsp</result>
+			<result name="success">view/viewUser.jsp</result>
+			<result name="login">view/login.jsp</result>
+		</action>
+		
+		<action name="*">
+			<result>view/index.jsp</result>
+		</action>
+		
+	</package>
+	
+	
+</struts>

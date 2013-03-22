@@ -1,0 +1,113 @@
+@CHARSET "ISO-8859-1";
+#top{
+	text-align: center;
+	color: 	#C41E3A
+}
+
+
+.infoWindow{
+	font-size: 20px;
+	color: #E90F34;
+	text-shadow:none
+}
+
+.submenu-item {
+	font-size: 15px;
+	text-decoration: none;
+	font-effect: engrave;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	color: #E90F34
+	}
+
+a:hover .submenu-item {
+	text-decoration: none;
+	color: 	#FD15A1
+	}
+
+.menu-item {
+	font-size: 20px;
+	text-decoration: none;
+	font-effect: engrave;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	color: #E90F34
+	}
+
+.errorMessage{
+	color: #FD15A1
+	}
+
+a {text-decoration: none}
+
+
+
+a:hover .menu-item{
+	text-decoration: none;
+	
+	color: 	#FD15A1
+}
+
+.pothole{
+	font-size: 18px;
+	vertical-align: text-top;
+	color: #E0A500
+}
+
+.subtitle{
+	font-size: 18px;
+	color:#E90F34
+	}
+
+a:hover .pothole{
+	color: yellow
+}
+
+body {
+		font-family:Tahoma, Geneva, sans-serif;
+		background-repeat: repeat;
+		background-size: 100%;
+		background-image: url(asphalt.gif)
+}
+
+.button{
+	font-family: "Arial";
+	font-size: 15px;
+	background-image: url(button.jpg);
+	text-shadow: white 0.1em 0.1em 0.1em;
+	color: #890029
+	}
+
+.button:hover {
+	text-shadow: white 0.1em 0.1em 0.1em;
+	color: 	red
+	}
+
+#map{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
+	height: 450px
+	}
+
+.marker {
+	color: black;
+	text-shadow: none
+}
+
+table {
+	text-shadow: black 0.1em 0.1em 0.2em;
+	color: gold;
+	background-image: url(background.jpg)
+}
+
+label{
+	color: 	gold
+}
+
+H1{
+	font-size: 40px;
+	font-effect: engrave;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	text-align: center;
+	color: 	#E90F34
+}
